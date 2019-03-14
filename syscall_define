@@ -1,0 +1,712 @@
+linux-nova-master/kernel/kexec.c:SYSCALL_DEFINE4(kexec_load, unsigned long, entry, unsigned long, nr_segments,
+linux-nova-master/kernel/kexec.c:COMPAT_SYSCALL_DEFINE4(kexec_load, compat_ulong_t, entry,
+linux-nova-master/kernel/seccomp.c:SYSCALL_DEFINE3(seccomp, unsigned int, op, unsigned int, flags,
+linux-nova-master/kernel/kexec_file.c:SYSCALL_DEFINE5(kexec_file_load, int, kernel_fd, int, initrd_fd,
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE1(nice, int, increment)
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE3(sched_setscheduler, pid_t, pid, int, policy, struct sched_param __user *, param)
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE2(sched_setparam, pid_t, pid, struct sched_param __user *, param)
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE3(sched_setattr, pid_t, pid, struct sched_attr __user *, uattr,
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE1(sched_getscheduler, pid_t, pid)
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE2(sched_getparam, pid_t, pid, struct sched_param __user *, param)
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE4(sched_getattr, pid_t, pid, struct sched_attr __user *, uattr,
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE3(sched_setaffinity, pid_t, pid, unsigned int, len,
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE3(sched_getaffinity, pid_t, pid, unsigned int, len,
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE0(sched_yield)
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE1(sched_get_priority_max, int, policy)
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE1(sched_get_priority_min, int, policy)
+linux-nova-master/kernel/sched/core.c:SYSCALL_DEFINE2(sched_rr_get_interval, pid_t, pid,
+linux-nova-master/kernel/compat.c:COMPAT_SYSCALL_DEFINE3(sigprocmask, int, how,
+linux-nova-master/kernel/compat.c:COMPAT_SYSCALL_DEFINE3(sched_setaffinity, compat_pid_t, pid,
+linux-nova-master/kernel/compat.c:COMPAT_SYSCALL_DEFINE3(sched_getaffinity, compat_pid_t,  pid, unsigned int, len,
+linux-nova-master/kernel/compat.c:COMPAT_SYSCALL_DEFINE6(move_pages, pid_t, pid, compat_ulong_t, nr_pages,
+linux-nova-master/kernel/compat.c:COMPAT_SYSCALL_DEFINE4(migrate_pages, compat_pid_t, pid,
+linux-nova-master/kernel/compat.c:COMPAT_SYSCALL_DEFINE2(sched_rr_get_interval,
+linux-nova-master/kernel/nsproxy.c:SYSCALL_DEFINE2(setns, int, fd, int, nstype)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE0(restart_syscall)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE4(rt_sigprocmask, int, how, sigset_t __user *, nset,
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE4(rt_sigprocmask, int, how, compat_sigset_t __user *, nset,
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE2(rt_sigpending, sigset_t __user *, uset, size_t, sigsetsize)
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE2(rt_sigpending, compat_sigset_t __user *, uset,
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE4(rt_sigtimedwait, const sigset_t __user *, uthese,
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE4(rt_sigtimedwait, compat_sigset_t __user *, uthese,
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE2(kill, pid_t, pid, int, sig)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE3(tgkill, pid_t, tgid, pid_t, pid, int, sig)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE2(tkill, pid_t, pid, int, sig)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE3(rt_sigqueueinfo, pid_t, pid, int, sig,
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE3(rt_sigqueueinfo,
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE4(rt_tgsigqueueinfo, pid_t, tgid, pid_t, pid, int, sig,
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE4(rt_tgsigqueueinfo,
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE2(sigaltstack,const stack_t __user *,uss, stack_t __user *,uoss)
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE2(sigaltstack,
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE1(sigpending, old_sigset_t __user *, set)
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE1(sigpending, compat_old_sigset_t __user *, set32)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE3(sigprocmask, int, how, old_sigset_t __user *, nset,
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE4(rt_sigaction, int, sig,
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE4(rt_sigaction, int, sig,
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE3(sigaction, int, sig,
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE3(sigaction, int, sig,
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE0(sgetmask)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE1(ssetmask, int, newmask)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE2(signal, int, sig, __sighandler_t, handler)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE0(pause)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE2(rt_sigsuspend, sigset_t __user *, unewset, size_t, sigsetsize)
+linux-nova-master/kernel/signal.c:COMPAT_SYSCALL_DEFINE2(rt_sigsuspend, compat_sigset_t __user *, unewset, compat_size_t, sigsetsize)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE1(sigsuspend, old_sigset_t, mask)
+linux-nova-master/kernel/signal.c:SYSCALL_DEFINE3(sigsuspend, int, unused1, int, unused2, old_sigset_t, mask)
+linux-nova-master/kernel/time/posix-stubs.c:SYSCALL_DEFINE2(clock_settime, const clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-stubs.c:SYSCALL_DEFINE2(clock_gettime, const clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-stubs.c:SYSCALL_DEFINE2(clock_getres, const clockid_t, which_clock, struct timespec __user *, tp)
+linux-nova-master/kernel/time/posix-stubs.c:SYSCALL_DEFINE4(clock_nanosleep, const clockid_t, which_clock, int, flags,
+linux-nova-master/kernel/time/posix-stubs.c:COMPAT_SYSCALL_DEFINE2(clock_settime, const clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-stubs.c:COMPAT_SYSCALL_DEFINE2(clock_gettime, clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-stubs.c:COMPAT_SYSCALL_DEFINE2(clock_getres, clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-stubs.c:COMPAT_SYSCALL_DEFINE4(clock_nanosleep, clockid_t, which_clock, int, flags,
+linux-nova-master/kernel/time/time.c:SYSCALL_DEFINE1(time, time_t __user *, tloc)
+linux-nova-master/kernel/time/time.c:SYSCALL_DEFINE1(stime, time_t __user *, tptr)
+linux-nova-master/kernel/time/time.c:COMPAT_SYSCALL_DEFINE1(time, compat_time_t __user *, tloc)
+linux-nova-master/kernel/time/time.c:COMPAT_SYSCALL_DEFINE1(stime, compat_time_t __user *, tptr)
+linux-nova-master/kernel/time/time.c:SYSCALL_DEFINE2(gettimeofday, struct timeval __user *, tv,
+linux-nova-master/kernel/time/time.c:SYSCALL_DEFINE2(settimeofday, struct timeval __user *, tv,
+linux-nova-master/kernel/time/time.c:COMPAT_SYSCALL_DEFINE2(gettimeofday, struct compat_timeval __user *, tv,
+linux-nova-master/kernel/time/time.c:COMPAT_SYSCALL_DEFINE2(settimeofday, struct compat_timeval __user *, tv,
+linux-nova-master/kernel/time/time.c:SYSCALL_DEFINE1(adjtimex, struct timex __user *, txc_p)
+linux-nova-master/kernel/time/time.c:COMPAT_SYSCALL_DEFINE1(adjtimex, struct compat_timex __user *, utp)
+linux-nova-master/kernel/time/hrtimer.c:SYSCALL_DEFINE2(nanosleep, struct timespec __user *, rqtp,
+linux-nova-master/kernel/time/hrtimer.c:COMPAT_SYSCALL_DEFINE2(nanosleep, struct compat_timespec __user *, rqtp,
+linux-nova-master/kernel/time/itimer.c:SYSCALL_DEFINE2(getitimer, int, which, struct itimerval __user *, value)
+linux-nova-master/kernel/time/itimer.c:COMPAT_SYSCALL_DEFINE2(getitimer, int, which,
+linux-nova-master/kernel/time/itimer.c:SYSCALL_DEFINE1(alarm, unsigned int, seconds)
+linux-nova-master/kernel/time/itimer.c:SYSCALL_DEFINE3(setitimer, int, which, struct itimerval __user *, value,
+linux-nova-master/kernel/time/itimer.c:COMPAT_SYSCALL_DEFINE3(setitimer, int, which,
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE3(timer_create, const clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:COMPAT_SYSCALL_DEFINE3(timer_create, clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE2(timer_gettime, timer_t, timer_id,
+linux-nova-master/kernel/time/posix-timers.c:COMPAT_SYSCALL_DEFINE2(timer_gettime, timer_t, timer_id,
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE1(timer_getoverrun, timer_t, timer_id)
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE4(timer_settime, timer_t, timer_id, int, flags,
+linux-nova-master/kernel/time/posix-timers.c:COMPAT_SYSCALL_DEFINE4(timer_settime, timer_t, timer_id, int, flags,
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE1(timer_delete, timer_t, timer_id)
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE2(clock_settime, const clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE2(clock_gettime, const clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE2(clock_adjtime, const clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE2(clock_getres, const clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:COMPAT_SYSCALL_DEFINE2(clock_settime, clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:COMPAT_SYSCALL_DEFINE2(clock_gettime, clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:COMPAT_SYSCALL_DEFINE2(clock_adjtime, clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:COMPAT_SYSCALL_DEFINE2(clock_getres, clockid_t, which_clock,
+linux-nova-master/kernel/time/posix-timers.c:SYSCALL_DEFINE4(clock_nanosleep, const clockid_t, which_clock, int, flags,
+linux-nova-master/kernel/time/posix-timers.c:COMPAT_SYSCALL_DEFINE4(clock_nanosleep, clockid_t, which_clock, int, flags,
+linux-nova-master/kernel/fork.c:SYSCALL_DEFINE1(set_tid_address, int __user *, tidptr)
+linux-nova-master/kernel/fork.c:SYSCALL_DEFINE0(fork)
+linux-nova-master/kernel/fork.c:SYSCALL_DEFINE0(vfork)
+linux-nova-master/kernel/fork.c:SYSCALL_DEFINE5(clone, unsigned long, clone_flags, unsigned long, newsp,
+linux-nova-master/kernel/fork.c:SYSCALL_DEFINE5(clone, unsigned long, newsp, unsigned long, clone_flags,
+linux-nova-master/kernel/fork.c:SYSCALL_DEFINE6(clone, unsigned long, clone_flags, unsigned long, newsp,
+linux-nova-master/kernel/fork.c:SYSCALL_DEFINE5(clone, unsigned long, clone_flags, unsigned long, newsp,
+linux-nova-master/kernel/fork.c:SYSCALL_DEFINE1(unshare, unsigned long, unshare_flags)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE3(setpriority, int, which, int, who, int, niceval)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(getpriority, int, which, int, who)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(setregid, gid_t, rgid, gid_t, egid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(setgid, gid_t, gid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(setreuid, uid_t, ruid, uid_t, euid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(setuid, uid_t, uid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE3(setresuid, uid_t, ruid, uid_t, euid, uid_t, suid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE3(getresuid, uid_t __user *, ruidp, uid_t __user *, euidp, uid_t __user *, suidp)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE3(setresgid, gid_t, rgid, gid_t, egid, gid_t, sgid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE3(getresgid, gid_t __user *, rgidp, gid_t __user *, egidp, gid_t __user *, sgidp)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(setfsuid, uid_t, uid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(setfsgid, gid_t, gid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE0(getpid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE0(gettid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE0(getppid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE0(getuid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE0(geteuid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE0(getgid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE0(getegid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(times, struct tms __user *, tbuf)
+linux-nova-master/kernel/sys.c:COMPAT_SYSCALL_DEFINE1(times, struct compat_tms __user *, tbuf)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(setpgid, pid_t, pid, pid_t, pgid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(getpgid, pid_t, pid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE0(getpgrp)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(getsid, pid_t, pid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE0(setsid)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(newuname, struct new_utsname __user *, name)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(uname, struct old_utsname __user *, name)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(olduname, struct oldold_utsname __user *, name)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(sethostname, char __user *, name, int, len)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(gethostname, char __user *, name, int, len)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(setdomainname, char __user *, name, int, len)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(getrlimit, unsigned int, resource, struct rlimit __user *, rlim)
+linux-nova-master/kernel/sys.c:COMPAT_SYSCALL_DEFINE2(setrlimit, unsigned int, resource,
+linux-nova-master/kernel/sys.c:COMPAT_SYSCALL_DEFINE2(getrlimit, unsigned int, resource,
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(old_getrlimit, unsigned int, resource,
+linux-nova-master/kernel/sys.c:COMPAT_SYSCALL_DEFINE2(old_getrlimit, unsigned int, resource,
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE4(prlimit64, pid_t, pid, unsigned int, resource,
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(setrlimit, unsigned int, resource, struct rlimit __user *, rlim)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE2(getrusage, int, who, struct rusage __user *, ru)
+linux-nova-master/kernel/sys.c:COMPAT_SYSCALL_DEFINE2(getrusage, int, who, struct compat_rusage __user *, ru)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(umask, int, mask)
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE5(prctl, int, option, unsigned long, arg2, unsigned long, arg3,
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE3(getcpu, unsigned __user *, cpup, unsigned __user *, nodep,
+linux-nova-master/kernel/sys.c:SYSCALL_DEFINE1(sysinfo, struct sysinfo __user *, info)
+linux-nova-master/kernel/sys.c:COMPAT_SYSCALL_DEFINE1(sysinfo, struct compat_sysinfo __user *, info)
+linux-nova-master/kernel/futex.c:SYSCALL_DEFINE2(set_robust_list, struct robust_list_head __user *, head,
+linux-nova-master/kernel/futex.c:SYSCALL_DEFINE3(get_robust_list, int, pid,
+linux-nova-master/kernel/futex.c:SYSCALL_DEFINE6(futex, u32 __user *, uaddr, int, op, u32, val,
+linux-nova-master/kernel/futex_compat.c:COMPAT_SYSCALL_DEFINE2(set_robust_list,
+linux-nova-master/kernel/futex_compat.c:COMPAT_SYSCALL_DEFINE3(get_robust_list, int, pid,
+linux-nova-master/kernel/futex_compat.c:COMPAT_SYSCALL_DEFINE6(futex, u32 __user *, uaddr, int, op, u32, val,
+linux-nova-master/kernel/exec_domain.c:SYSCALL_DEFINE1(personality, unsigned int, personality)
+linux-nova-master/kernel/ptrace.c:SYSCALL_DEFINE4(ptrace, long, request, long, pid, unsigned long, addr,
+linux-nova-master/kernel/ptrace.c:COMPAT_SYSCALL_DEFINE4(ptrace, compat_long_t, request, compat_long_t, pid,
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE3(chown16, const char __user *, filename, old_uid_t, user, old_gid_t, group)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE3(lchown16, const char __user *, filename, old_uid_t, user, old_gid_t, group)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE3(fchown16, unsigned int, fd, old_uid_t, user, old_gid_t, group)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE2(setregid16, old_gid_t, rgid, old_gid_t, egid)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE1(setgid16, old_gid_t, gid)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE2(setreuid16, old_uid_t, ruid, old_uid_t, euid)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE1(setuid16, old_uid_t, uid)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE3(setresuid16, old_uid_t, ruid, old_uid_t, euid, old_uid_t, suid)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE3(getresuid16, old_uid_t __user *, ruidp, old_uid_t __user *, euidp, old_uid_t __user *, suidp)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE3(setresgid16, old_gid_t, rgid, old_gid_t, egid, old_gid_t, sgid)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE3(getresgid16, old_gid_t __user *, rgidp, old_gid_t __user *, egidp, old_gid_t __user *, sgidp)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE1(setfsuid16, old_uid_t, uid)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE1(setfsgid16, old_gid_t, gid)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE2(getgroups16, int, gidsetsize, old_gid_t __user *, grouplist)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE2(setgroups16, int, gidsetsize, old_gid_t __user *, grouplist)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE0(getuid16)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE0(geteuid16)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE0(getgid16)
+linux-nova-master/kernel/uid16.c:SYSCALL_DEFINE0(getegid16)
+linux-nova-master/kernel/capability.c:SYSCALL_DEFINE2(capget, cap_user_header_t, header, cap_user_data_t, dataptr)
+linux-nova-master/kernel/capability.c:SYSCALL_DEFINE2(capset, cap_user_header_t, header, const cap_user_data_t, data)
+linux-nova-master/kernel/exit.c:SYSCALL_DEFINE1(exit, int, error_code)
+linux-nova-master/kernel/exit.c:SYSCALL_DEFINE1(exit_group, int, error_code)
+linux-nova-master/kernel/exit.c:SYSCALL_DEFINE5(waitid, int, which, pid_t, upid, struct siginfo __user *,
+linux-nova-master/kernel/exit.c:SYSCALL_DEFINE4(wait4, pid_t, upid, int __user *, stat_addr,
+linux-nova-master/kernel/exit.c:SYSCALL_DEFINE3(waitpid, pid_t, pid, int __user *, stat_addr, int, options)
+linux-nova-master/kernel/exit.c:COMPAT_SYSCALL_DEFINE4(wait4,
+linux-nova-master/kernel/exit.c:COMPAT_SYSCALL_DEFINE5(waitid,
+linux-nova-master/kernel/reboot.c:SYSCALL_DEFINE4(reboot, int, magic1, int, magic2, unsigned int, cmd,
+linux-nova-master/kernel/groups.c:SYSCALL_DEFINE2(getgroups, int, gidsetsize, gid_t __user *, grouplist)
+linux-nova-master/kernel/groups.c:SYSCALL_DEFINE2(setgroups, int, gidsetsize, gid_t __user *, grouplist)
+linux-nova-master/kernel/membarrier.c:SYSCALL_DEFINE2(membarrier, int, cmd, int, flags)
+linux-nova-master/kernel/printk/printk.c:SYSCALL_DEFINE3(syslog, int, type, char __user *, buf, int, len)
+linux-nova-master/kernel/events/core.c:SYSCALL_DEFINE5(perf_event_open,
+linux-nova-master/kernel/module.c:SYSCALL_DEFINE2(delete_module, const char __user *, name_user,
+linux-nova-master/kernel/module.c:SYSCALL_DEFINE3(init_module, void __user *, umod,
+linux-nova-master/kernel/module.c:SYSCALL_DEFINE3(finit_module, int, fd, const char __user *, uargs, int, flags)
+linux-nova-master/kernel/bpf/syscall.c:SYSCALL_DEFINE3(bpf, int, cmd, union bpf_attr __user *, uattr, unsigned int, size)
+linux-nova-master/kernel/kcmp.c:SYSCALL_DEFINE5(kcmp, pid_t, pid1, pid_t, pid2, int, type,
+linux-nova-master/kernel/sysctl_binary.c:SYSCALL_DEFINE1(sysctl, struct __sysctl_args __user *, args)
+linux-nova-master/kernel/sysctl_binary.c:COMPAT_SYSCALL_DEFINE1(sysctl, struct compat_sysctl_args __user *, args)
+linux-nova-master/kernel/acct.c:SYSCALL_DEFINE1(acct, const char __user *, name)
+linux-nova-master/drivers/char/random.c:SYSCALL_DEFINE3(getrandom, char __user *, buf, size_t, count,
+linux-nova-master/drivers/pci/syscall.c:SYSCALL_DEFINE5(pciconfig_read, unsigned long, bus, unsigned long, dfn,
+linux-nova-master/drivers/pci/syscall.c:SYSCALL_DEFINE5(pciconfig_write, unsigned long, bus, unsigned long, dfn,
+linux-nova-master/block/ioprio.c:SYSCALL_DEFINE3(ioprio_set, int, which, int, who, int, ioprio)
+linux-nova-master/block/ioprio.c:SYSCALL_DEFINE2(ioprio_get, int, which, int, who)
+linux-nova-master/fs/select.c:SYSCALL_DEFINE5(select, int, n, fd_set __user *, inp, fd_set __user *, outp,
+linux-nova-master/fs/select.c:SYSCALL_DEFINE6(pselect6, int, n, fd_set __user *, inp, fd_set __user *, outp,
+linux-nova-master/fs/select.c:SYSCALL_DEFINE1(old_select, struct sel_arg_struct __user *, arg)
+linux-nova-master/fs/select.c:SYSCALL_DEFINE3(poll, struct pollfd __user *, ufds, unsigned int, nfds,
+linux-nova-master/fs/select.c:SYSCALL_DEFINE5(ppoll, struct pollfd __user *, ufds, unsigned int, nfds,
+linux-nova-master/fs/select.c:COMPAT_SYSCALL_DEFINE5(select, int, n, compat_ulong_t __user *, inp,
+linux-nova-master/fs/select.c:COMPAT_SYSCALL_DEFINE1(old_select, struct compat_sel_arg_struct __user *, arg)
+linux-nova-master/fs/select.c:COMPAT_SYSCALL_DEFINE6(pselect6, int, n, compat_ulong_t __user *, inp,
+linux-nova-master/fs/select.c:COMPAT_SYSCALL_DEFINE5(ppoll, struct pollfd __user *, ufds,
+linux-nova-master/fs/pipe.c:SYSCALL_DEFINE2(pipe2, int __user *, fildes, int, flags)
+linux-nova-master/fs/pipe.c:SYSCALL_DEFINE1(pipe, int __user *, fildes)
+linux-nova-master/fs/splice.c:SYSCALL_DEFINE4(vmsplice, int, fd, const struct iovec __user *, iov,
+linux-nova-master/fs/splice.c:COMPAT_SYSCALL_DEFINE4(vmsplice, int, fd, const struct compat_iovec __user *, iov32,
+linux-nova-master/fs/splice.c:SYSCALL_DEFINE6(splice, int, fd_in, loff_t __user *, off_in,
+linux-nova-master/fs/splice.c:SYSCALL_DEFINE4(tee, int, fdin, int, fdout, size_t, len, unsigned int, flags)
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE2(stat, const char __user *, filename,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE2(lstat, const char __user *, filename,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE2(fstat, unsigned int, fd, struct __old_kernel_stat __user *, statbuf)
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE2(newstat, const char __user *, filename,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE2(newlstat, const char __user *, filename,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE4(newfstatat, int, dfd, const char __user *, filename,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE2(newfstat, unsigned int, fd, struct stat __user *, statbuf)
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE4(readlinkat, int, dfd, const char __user *, pathname,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE3(readlink, const char __user *, path, char __user *, buf,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE2(stat64, const char __user *, filename,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE2(lstat64, const char __user *, filename,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE2(fstat64, unsigned long, fd, struct stat64 __user *, statbuf)
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE4(fstatat64, int, dfd, const char __user *, filename,
+linux-nova-master/fs/stat.c:SYSCALL_DEFINE5(statx,
+linux-nova-master/fs/stat.c:COMPAT_SYSCALL_DEFINE2(newstat, const char __user *, filename,
+linux-nova-master/fs/stat.c:COMPAT_SYSCALL_DEFINE2(newlstat, const char __user *, filename,
+linux-nova-master/fs/stat.c:COMPAT_SYSCALL_DEFINE4(newfstatat, unsigned int, dfd,
+linux-nova-master/fs/stat.c:COMPAT_SYSCALL_DEFINE2(newfstat, unsigned int, fd,
+linux-nova-master/fs/compat.c:COMPAT_SYSCALL_DEFINE5(mount, const char __user *, dev_name,
+linux-nova-master/fs/aio.c:SYSCALL_DEFINE2(io_setup, unsigned, nr_events, aio_context_t __user *, ctxp)
+linux-nova-master/fs/aio.c:COMPAT_SYSCALL_DEFINE2(io_setup, unsigned, nr_events, u32 __user *, ctx32p)
+linux-nova-master/fs/aio.c:SYSCALL_DEFINE1(io_destroy, aio_context_t, ctx)
+linux-nova-master/fs/aio.c:SYSCALL_DEFINE3(io_submit, aio_context_t, ctx_id, long, nr,
+linux-nova-master/fs/aio.c:COMPAT_SYSCALL_DEFINE3(io_submit, compat_aio_context_t, ctx_id,
+linux-nova-master/fs/aio.c:SYSCALL_DEFINE3(io_cancel, aio_context_t, ctx_id, struct iocb __user *, iocb,
+linux-nova-master/fs/aio.c:SYSCALL_DEFINE5(io_getevents, aio_context_t, ctx_id,
+linux-nova-master/fs/aio.c:COMPAT_SYSCALL_DEFINE5(io_getevents, compat_aio_context_t, ctx_id,
+linux-nova-master/fs/compat_ioctl.c:COMPAT_SYSCALL_DEFINE3(ioctl, unsigned int, fd, unsigned int, cmd,
+linux-nova-master/fs/dcookies.c:SYSCALL_DEFINE3(lookup_dcookie, u64, cookie64, char __user *, buf, size_t, len)
+linux-nova-master/fs/dcookies.c:COMPAT_SYSCALL_DEFINE4(lookup_dcookie, u32, w0, u32, w1, char __user *, buf, compat_size_t, len)
+linux-nova-master/fs/notify/inotify/inotify_user.c:SYSCALL_DEFINE1(inotify_init1, int, flags)
+linux-nova-master/fs/notify/inotify/inotify_user.c:SYSCALL_DEFINE0(inotify_init)
+linux-nova-master/fs/notify/inotify/inotify_user.c:SYSCALL_DEFINE3(inotify_add_watch, int, fd, const char __user *, pathname,
+linux-nova-master/fs/notify/inotify/inotify_user.c:SYSCALL_DEFINE2(inotify_rm_watch, int, fd, __s32, wd)
+linux-nova-master/fs/notify/fanotify/fanotify_user.c:SYSCALL_DEFINE2(fanotify_init, unsigned int, flags, unsigned int, event_f_flags)
+linux-nova-master/fs/notify/fanotify/fanotify_user.c:SYSCALL_DEFINE5(fanotify_mark, int, fanotify_fd, unsigned int, flags,
+linux-nova-master/fs/notify/fanotify/fanotify_user.c:COMPAT_SYSCALL_DEFINE6(fanotify_mark,
+linux-nova-master/fs/fhandle.c:SYSCALL_DEFINE5(name_to_handle_at, int, dfd, const char __user *, name,
+linux-nova-master/fs/fhandle.c:SYSCALL_DEFINE3(open_by_handle_at, int, mountdirfd,
+linux-nova-master/fs/fhandle.c:COMPAT_SYSCALL_DEFINE3(open_by_handle_at, int, mountdirfd,
+linux-nova-master/fs/open.c:SYSCALL_DEFINE2(truncate, const char __user *, path, long, length)
+linux-nova-master/fs/open.c:COMPAT_SYSCALL_DEFINE2(truncate, const char __user *, path, compat_off_t, length)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE2(ftruncate, unsigned int, fd, unsigned long, length)
+linux-nova-master/fs/open.c:COMPAT_SYSCALL_DEFINE2(ftruncate, unsigned int, fd, compat_ulong_t, length)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE2(truncate64, const char __user *, path, loff_t, length)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE2(ftruncate64, unsigned int, fd, loff_t, length)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE4(fallocate, int, fd, int, mode, loff_t, offset, loff_t, len)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE3(faccessat, int, dfd, const char __user *, filename, int, mode)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE2(access, const char __user *, filename, int, mode)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE1(chdir, const char __user *, filename)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE1(fchdir, unsigned int, fd)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE1(chroot, const char __user *, filename)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE2(fchmod, unsigned int, fd, umode_t, mode)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE3(fchmodat, int, dfd, const char __user *, filename, umode_t, mode)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE2(chmod, const char __user *, filename, umode_t, mode)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE5(fchownat, int, dfd, const char __user *, filename, uid_t, user,
+linux-nova-master/fs/open.c:SYSCALL_DEFINE3(chown, const char __user *, filename, uid_t, user, gid_t, group)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE3(lchown, const char __user *, filename, uid_t, user, gid_t, group)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE3(fchown, unsigned int, fd, uid_t, user, gid_t, group)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE3(open, const char __user *, filename, int, flags, umode_t, mode)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE4(openat, int, dfd, const char __user *, filename, int, flags,
+linux-nova-master/fs/open.c:COMPAT_SYSCALL_DEFINE3(open, const char __user *, filename, int, flags, umode_t, mode)
+linux-nova-master/fs/open.c:COMPAT_SYSCALL_DEFINE4(openat, int, dfd, const char __user *, filename, int, flags, umode_t, mode)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE2(creat, const char __user *, pathname, umode_t, mode)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE1(close, unsigned int, fd)
+linux-nova-master/fs/open.c:SYSCALL_DEFINE0(vhangup)
+linux-nova-master/fs/timerfd.c:SYSCALL_DEFINE2(timerfd_create, int, clockid, int, flags)
+linux-nova-master/fs/timerfd.c:SYSCALL_DEFINE4(timerfd_settime, int, ufd, int, flags,
+linux-nova-master/fs/timerfd.c:SYSCALL_DEFINE2(timerfd_gettime, int, ufd, struct itimerspec __user *, otmr)
+linux-nova-master/fs/timerfd.c:COMPAT_SYSCALL_DEFINE4(timerfd_settime, int, ufd, int, flags,
+linux-nova-master/fs/timerfd.c:COMPAT_SYSCALL_DEFINE2(timerfd_gettime, int, ufd,
+linux-nova-master/fs/dcache.c:SYSCALL_DEFINE2(getcwd, char __user *, buf, unsigned long, size)
+linux-nova-master/fs/buffer.c:SYSCALL_DEFINE2(bdflush, int, func, long, data)
+linux-nova-master/fs/namespace.c:SYSCALL_DEFINE2(umount, char __user *, name, int, flags)
+linux-nova-master/fs/namespace.c:SYSCALL_DEFINE1(oldumount, char __user *, name)
+linux-nova-master/fs/namespace.c:SYSCALL_DEFINE5(mount, char __user *, dev_name, char __user *, dir_name,
+linux-nova-master/fs/namespace.c:SYSCALL_DEFINE2(pivot_root, const char __user *, new_root,
+linux-nova-master/fs/sync.c:SYSCALL_DEFINE0(sync)
+linux-nova-master/fs/sync.c:SYSCALL_DEFINE1(syncfs, int, fd)
+linux-nova-master/fs/sync.c:SYSCALL_DEFINE1(fsync, unsigned int, fd)
+linux-nova-master/fs/sync.c:SYSCALL_DEFINE1(fdatasync, unsigned int, fd)
+linux-nova-master/fs/sync.c:SYSCALL_DEFINE4(sync_file_range, int, fd, loff_t, offset, loff_t, nbytes,
+linux-nova-master/fs/sync.c:SYSCALL_DEFINE4(sync_file_range2, int, fd, unsigned int, flags,
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE4(mknodat, int, dfd, const char __user *, filename, umode_t, mode,
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE3(mknod, const char __user *, filename, umode_t, mode, unsigned, dev)
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE3(mkdirat, int, dfd, const char __user *, pathname, umode_t, mode)
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE2(mkdir, const char __user *, pathname, umode_t, mode)
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE1(rmdir, const char __user *, pathname)
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE3(unlinkat, int, dfd, const char __user *, pathname, int, flag)
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE1(unlink, const char __user *, pathname)
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE3(symlinkat, const char __user *, oldname,
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE2(symlink, const char __user *, oldname, const char __user *, newname)
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE5(linkat, int, olddfd, const char __user *, oldname,
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE2(link, const char __user *, oldname, const char __user *, newname)
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE5(renameat2, int, olddfd, const char __user *, oldname,
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE4(renameat, int, olddfd, const char __user *, oldname,
+linux-nova-master/fs/namei.c:SYSCALL_DEFINE2(rename, const char __user *, oldname, const char __user *, newname)
+linux-nova-master/fs/fcntl.c:SYSCALL_DEFINE3(fcntl, unsigned int, fd, unsigned int, cmd, unsigned long, arg)
+linux-nova-master/fs/fcntl.c:SYSCALL_DEFINE3(fcntl64, unsigned int, fd, unsigned int, cmd,
+linux-nova-master/fs/fcntl.c:COMPAT_SYSCALL_DEFINE3(fcntl64, unsigned int, fd, unsigned int, cmd,
+linux-nova-master/fs/fcntl.c:COMPAT_SYSCALL_DEFINE3(fcntl, unsigned int, fd, unsigned int, cmd,
+linux-nova-master/fs/signalfd.c:SYSCALL_DEFINE4(signalfd4, int, ufd, sigset_t __user *, user_mask,
+linux-nova-master/fs/signalfd.c:SYSCALL_DEFINE3(signalfd, int, ufd, sigset_t __user *, user_mask,
+linux-nova-master/fs/signalfd.c:COMPAT_SYSCALL_DEFINE4(signalfd4, int, ufd,
+linux-nova-master/fs/signalfd.c:COMPAT_SYSCALL_DEFINE3(signalfd, int, ufd,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE5(setxattr, const char __user *, pathname,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE5(lsetxattr, const char __user *, pathname,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE5(fsetxattr, int, fd, const char __user *, name,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE4(getxattr, const char __user *, pathname,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE4(lgetxattr, const char __user *, pathname,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE4(fgetxattr, int, fd, const char __user *, name,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE3(listxattr, const char __user *, pathname, char __user *, list,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE3(llistxattr, const char __user *, pathname, char __user *, list,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE3(flistxattr, int, fd, char __user *, list, size_t, size)
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE2(removexattr, const char __user *, pathname,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE2(lremovexattr, const char __user *, pathname,
+linux-nova-master/fs/xattr.c:SYSCALL_DEFINE2(fremovexattr, int, fd, const char __user *, name)
+linux-nova-master/fs/filesystems.c:SYSCALL_DEFINE3(sysfs, int, option, unsigned long, arg1, unsigned long, arg2)
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE3(lseek, unsigned int, fd, off_t, offset, unsigned int, whence)
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE3(lseek, unsigned int, fd, compat_off_t, offset, unsigned int, whence)
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE5(llseek, unsigned int, fd, unsigned long, offset_high,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE3(read, unsigned int, fd, char __user *, buf, size_t, count)
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE3(write, unsigned int, fd, const char __user *, buf,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE4(pread64, unsigned int, fd, char __user *, buf,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE4(pwrite64, unsigned int, fd, const char __user *, buf,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE3(readv, unsigned long, fd, const struct iovec __user *, vec,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE3(writev, unsigned long, fd, const struct iovec __user *, vec,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE5(preadv, unsigned long, fd, const struct iovec __user *, vec,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE6(preadv2, unsigned long, fd, const struct iovec __user *, vec,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE5(pwritev, unsigned long, fd, const struct iovec __user *, vec,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE6(pwritev2, unsigned long, fd, const struct iovec __user *, vec,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE3(readv, compat_ulong_t, fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE4(preadv64, unsigned long, fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE5(preadv, compat_ulong_t, fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE5(preadv64v2, unsigned long, fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE6(preadv2, compat_ulong_t, fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE3(writev, compat_ulong_t, fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE4(pwritev64, unsigned long, fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE5(pwritev, compat_ulong_t, fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE5(pwritev64v2, unsigned long, fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE6(pwritev2, compat_ulong_t, fd,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE4(sendfile, int, out_fd, int, in_fd, off_t __user *, offset, size_t, count)
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE4(sendfile64, int, out_fd, int, in_fd, loff_t __user *, offset, size_t, count)
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE4(sendfile, int, out_fd, int, in_fd,
+linux-nova-master/fs/read_write.c:COMPAT_SYSCALL_DEFINE4(sendfile64, int, out_fd, int, in_fd,
+linux-nova-master/fs/read_write.c:SYSCALL_DEFINE6(copy_file_range, int, fd_in, loff_t __user *, off_in,
+linux-nova-master/fs/statfs.c:SYSCALL_DEFINE2(statfs, const char __user *, pathname, struct statfs __user *, buf)
+linux-nova-master/fs/statfs.c:SYSCALL_DEFINE3(statfs64, const char __user *, pathname, size_t, sz, struct statfs64 __user *, buf)
+linux-nova-master/fs/statfs.c:SYSCALL_DEFINE2(fstatfs, unsigned int, fd, struct statfs __user *, buf)
+linux-nova-master/fs/statfs.c:SYSCALL_DEFINE3(fstatfs64, unsigned int, fd, size_t, sz, struct statfs64 __user *, buf)
+linux-nova-master/fs/statfs.c:SYSCALL_DEFINE2(ustat, unsigned, dev, struct ustat __user *, ubuf)
+linux-nova-master/fs/statfs.c:COMPAT_SYSCALL_DEFINE2(statfs, const char __user *, pathname, struct compat_statfs __user *, buf)
+linux-nova-master/fs/statfs.c:COMPAT_SYSCALL_DEFINE2(fstatfs, unsigned int, fd, struct compat_statfs __user *, buf)
+linux-nova-master/fs/statfs.c:COMPAT_SYSCALL_DEFINE3(statfs64, const char __user *, pathname, compat_size_t, sz, struct compat_statfs64 __user *, buf)
+linux-nova-master/fs/statfs.c:COMPAT_SYSCALL_DEFINE3(fstatfs64, unsigned int, fd, compat_size_t, sz, struct compat_statfs64 __user *, buf)
+linux-nova-master/fs/statfs.c:COMPAT_SYSCALL_DEFINE2(ustat, unsigned, dev, struct compat_ustat __user *, u)
+linux-nova-master/fs/ioctl.c:SYSCALL_DEFINE3(ioctl, unsigned int, fd, unsigned int, cmd, unsigned long, arg)
+linux-nova-master/fs/locks.c:SYSCALL_DEFINE2(flock, unsigned int, fd, unsigned int, cmd)
+linux-nova-master/fs/file.c:SYSCALL_DEFINE3(dup3, unsigned int, oldfd, unsigned int, newfd, int, flags)
+linux-nova-master/fs/file.c:SYSCALL_DEFINE2(dup2, unsigned int, oldfd, unsigned int, newfd)
+linux-nova-master/fs/file.c:SYSCALL_DEFINE1(dup, unsigned int, fildes)
+linux-nova-master/fs/eventfd.c:SYSCALL_DEFINE2(eventfd2, unsigned int, count, int, flags)
+linux-nova-master/fs/eventfd.c:SYSCALL_DEFINE1(eventfd, unsigned int, count)
+linux-nova-master/fs/readdir.c:SYSCALL_DEFINE3(old_readdir, unsigned int, fd,
+linux-nova-master/fs/readdir.c:SYSCALL_DEFINE3(getdents, unsigned int, fd,
+linux-nova-master/fs/readdir.c:SYSCALL_DEFINE3(getdents64, unsigned int, fd,
+linux-nova-master/fs/readdir.c:COMPAT_SYSCALL_DEFINE3(old_readdir, unsigned int, fd,
+linux-nova-master/fs/readdir.c:COMPAT_SYSCALL_DEFINE3(getdents, unsigned int, fd,
+linux-nova-master/fs/eventpoll.c:SYSCALL_DEFINE1(epoll_create1, int, flags)
+linux-nova-master/fs/eventpoll.c:SYSCALL_DEFINE1(epoll_create, int, size)
+linux-nova-master/fs/eventpoll.c:SYSCALL_DEFINE4(epoll_ctl, int, epfd, int, op, int, fd,
+linux-nova-master/fs/eventpoll.c:SYSCALL_DEFINE4(epoll_wait, int, epfd, struct epoll_event __user *, events,
+linux-nova-master/fs/eventpoll.c:SYSCALL_DEFINE6(epoll_pwait, int, epfd, struct epoll_event __user *, events,
+linux-nova-master/fs/eventpoll.c:COMPAT_SYSCALL_DEFINE6(epoll_pwait, int, epfd,
+linux-nova-master/fs/utimes.c:SYSCALL_DEFINE2(utime, char __user *, filename, struct utimbuf __user *, times)
+linux-nova-master/fs/utimes.c:SYSCALL_DEFINE4(utimensat, int, dfd, const char __user *, filename,
+linux-nova-master/fs/utimes.c:SYSCALL_DEFINE3(futimesat, int, dfd, const char __user *, filename,
+linux-nova-master/fs/utimes.c:SYSCALL_DEFINE2(utimes, char __user *, filename,
+linux-nova-master/fs/utimes.c:COMPAT_SYSCALL_DEFINE2(utime, const char __user *, filename,
+linux-nova-master/fs/utimes.c:COMPAT_SYSCALL_DEFINE4(utimensat, unsigned int, dfd, const char __user *, filename, struct compat_timespec __user *, t, int, flags)
+linux-nova-master/fs/utimes.c:COMPAT_SYSCALL_DEFINE3(futimesat, unsigned int, dfd, const char __user *, filename, struct compat_timeval __user *, t)
+linux-nova-master/fs/utimes.c:COMPAT_SYSCALL_DEFINE2(utimes, const char __user *, filename, struct compat_timeval __user *, t)
+linux-nova-master/fs/userfaultfd.c:SYSCALL_DEFINE1(userfaultfd, int, flags)
+linux-nova-master/fs/exec.c:SYSCALL_DEFINE1(uselib, const char __user *, library)
+linux-nova-master/fs/exec.c:SYSCALL_DEFINE3(execve,
+linux-nova-master/fs/exec.c:SYSCALL_DEFINE5(execveat,
+linux-nova-master/fs/exec.c:COMPAT_SYSCALL_DEFINE3(execve, const char __user *, filename,
+linux-nova-master/fs/exec.c:COMPAT_SYSCALL_DEFINE5(execveat, int, fd,
+linux-nova-master/fs/quota/quota.c:SYSCALL_DEFINE4(quotactl, unsigned int, cmd, const char __user *, special,
+linux-nova-master/security/keys/compat.c:COMPAT_SYSCALL_DEFINE5(keyctl, u32, option,
+linux-nova-master/security/keys/keyctl.c:SYSCALL_DEFINE5(add_key, const char __user *, _type,
+linux-nova-master/security/keys/keyctl.c:SYSCALL_DEFINE4(request_key, const char __user *, _type,
+linux-nova-master/security/keys/keyctl.c:SYSCALL_DEFINE5(keyctl, int, option, unsigned long, arg2, unsigned long, arg3,
+linux-nova-master/arch/powerpc/kernel/syscalls.c:SYSCALL_DEFINE6(mmap2, unsigned long, addr, size_t, len,
+linux-nova-master/arch/powerpc/kernel/syscalls.c:SYSCALL_DEFINE6(mmap, unsigned long, addr, size_t, len,
+linux-nova-master/arch/powerpc/platforms/cell/spu_syscalls.c:SYSCALL_DEFINE4(spu_create, const char __user *, name, unsigned int, flags,
+linux-nova-master/arch/blackfin/kernel/sys_bfin.c:SYSCALL_DEFINE3(cacheflush, unsigned long, addr, unsigned long, len, int, op)
+linux-nova-master/arch/x86/kernel/tls.c:SYSCALL_DEFINE1(set_thread_area, struct user_desc __user *, u_info)
+linux-nova-master/arch/x86/kernel/tls.c:SYSCALL_DEFINE1(get_thread_area, struct user_desc __user *, u_info)
+linux-nova-master/arch/x86/kernel/ioport.c:SYSCALL_DEFINE1(iopl, unsigned int, level)
+linux-nova-master/arch/x86/kernel/process_64.c:SYSCALL_DEFINE2(arch_prctl, int, option, unsigned long, arg2)
+linux-nova-master/arch/x86/kernel/process_64.c:COMPAT_SYSCALL_DEFINE2(arch_prctl, int, option, unsigned long, arg2)
+linux-nova-master/arch/x86/kernel/sys_x86_64.c:SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/x86/kernel/process_32.c:SYSCALL_DEFINE2(arch_prctl, int, option, unsigned long, arg2)
+linux-nova-master/arch/x86/kernel/vm86_32.c:SYSCALL_DEFINE1(vm86old, struct vm86_struct __user *, user_vm86)
+linux-nova-master/arch/x86/kernel/vm86_32.c:SYSCALL_DEFINE2(vm86, unsigned long, cmd, unsigned long, arg)
+linux-nova-master/arch/x86/um/syscalls_64.c:SYSCALL_DEFINE2(arch_prctl, int, option, unsigned long, arg2)
+linux-nova-master/arch/x86/um/syscalls_32.c:SYSCALL_DEFINE2(arch_prctl, int, option, unsigned long, arg2)
+linux-nova-master/arch/x86/um/tls_32.c:SYSCALL_DEFINE1(set_thread_area, struct user_desc __user *, user_desc)
+linux-nova-master/arch/x86/um/tls_32.c:SYSCALL_DEFINE1(get_thread_area, struct user_desc __user *, user_desc)
+linux-nova-master/arch/alpha/kernel/signal.c:SYSCALL_DEFINE2(osf_sigprocmask, int, how, unsigned long, newmask)
+linux-nova-master/arch/alpha/kernel/signal.c:SYSCALL_DEFINE3(osf_sigaction, int, sig,
+linux-nova-master/arch/alpha/kernel/signal.c:SYSCALL_DEFINE5(rt_sigaction, int, sig, const struct sigaction __user *, act,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE1(osf_brk, unsigned long, brk)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE4(osf_set_program_attributes, unsigned long, text_start,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE4(osf_getdirentries, unsigned int, fd,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE6(osf_mmap, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE3(osf_statfs, const char __user *, pathname,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_stat, char __user *, name, struct osf_stat __user *, buf)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_lstat, char __user *, name, struct osf_stat __user *, buf)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_fstat, int, fd, struct osf_stat __user *, buf)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE3(osf_fstatfs, unsigned long, fd,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE3(osf_statfs64, char __user *, pathname,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE3(osf_fstatfs64, unsigned long, fd,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE4(osf_mount, unsigned long, typenr, const char __user *, path,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE1(osf_utsname, char __user *, name)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE0(getpagesize)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE0(getdtablesize)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_getdomainname, char __user *, name, int, namelen)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_proplist_syscall, enum pl_code, code,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_sigstack, struct sigstack __user *, uss,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE3(osf_sysinfo, int, command, char __user *, buf, long, count)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE5(osf_getsysinfo, unsigned long, op, void __user *, buffer,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE5(osf_setsysinfo, unsigned long, op, void __user *, buffer,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_gettimeofday, struct timeval32 __user *, tv,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_settimeofday, struct timeval32 __user *, tv,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_getitimer, int, which, struct itimerval32 __user *, it)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE3(osf_setitimer, int, which, struct itimerval32 __user *, in,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_utimes, const char __user *, filename,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE5(osf_select, int, n, fd_set __user *, inp, fd_set __user *, outp,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_getrusage, int, who, struct rusage32 __user *, ru)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE4(osf_wait4, pid_t, pid, int __user *, ustatus, int, options,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_usleep_thread, struct timeval32 __user *, sleep,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE1(old_adjtimex, struct timex32 __user *, txc_p)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE3(osf_readv, unsigned long, fd,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE3(osf_writev, unsigned long, fd,
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE2(osf_getpriority, int, which, int, who)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE0(getxuid)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE0(getxgid)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE0(getxpid)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE0(alpha_pipe)
+linux-nova-master/arch/alpha/kernel/osf_sys.c:SYSCALL_DEFINE1(sethae, unsigned long, val)
+linux-nova-master/arch/mips/kernel/linux32.c:SYSCALL_DEFINE6(32_mmap2, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/mips/kernel/linux32.c:SYSCALL_DEFINE4(32_truncate64, const char __user *, path,
+linux-nova-master/arch/mips/kernel/linux32.c:SYSCALL_DEFINE4(32_ftruncate64, unsigned long, fd, unsigned long, __dummy,
+linux-nova-master/arch/mips/kernel/linux32.c:SYSCALL_DEFINE5(32_llseek, unsigned int, fd, unsigned int, offset_high,
+linux-nova-master/arch/mips/kernel/linux32.c:SYSCALL_DEFINE6(32_pread, unsigned long, fd, char __user *, buf, size_t, count,
+linux-nova-master/arch/mips/kernel/linux32.c:SYSCALL_DEFINE6(32_pwrite, unsigned int, fd, const char __user *, buf,
+linux-nova-master/arch/mips/kernel/linux32.c:SYSCALL_DEFINE1(32_personality, unsigned long, personality)
+linux-nova-master/arch/mips/kernel/syscall.c:SYSCALL_DEFINE6(mips_mmap, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/mips/kernel/syscall.c:SYSCALL_DEFINE6(mips_mmap2, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/mips/kernel/syscall.c:SYSCALL_DEFINE1(set_thread_area, unsigned long, addr)
+linux-nova-master/arch/mips/kernel/syscall.c:SYSCALL_DEFINE3(sysmips, long, cmd, long, arg1, long, arg2)
+linux-nova-master/arch/mips/kernel/syscall.c:SYSCALL_DEFINE3(cachectl, char *, addr, int, nbytes, int, op)
+linux-nova-master/arch/mips/kernel/signal.c:SYSCALL_DEFINE1(sigsuspend, sigset_t __user *, uset)
+linux-nova-master/arch/mips/kernel/signal.c:SYSCALL_DEFINE3(sigaction, int, sig, const struct sigaction __user *, act,
+linux-nova-master/arch/mips/kernel/signal32.c:SYSCALL_DEFINE3(32_sigaction, long, sig, const struct compat_sigaction __user *, act,
+linux-nova-master/arch/mips/mm/cache.c:SYSCALL_DEFINE3(cacheflush, unsigned long, addr, unsigned long, bytes,
+linux-nova-master/arch/sparc/kernel/sys_sparc_64.c:SYSCALL_DEFINE1(sparc_pipe_real, struct pt_regs *, regs)
+linux-nova-master/arch/sparc/kernel/sys_sparc_64.c:SYSCALL_DEFINE6(sparc_ipc, unsigned int, call, int, first, unsigned long, second,
+linux-nova-master/arch/sparc/kernel/sys_sparc_64.c:SYSCALL_DEFINE1(sparc64_personality, unsigned long, personality)
+linux-nova-master/arch/sparc/kernel/sys_sparc_64.c:SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/sparc/kernel/sys_sparc_64.c:SYSCALL_DEFINE2(64_munmap, unsigned long, addr, size_t, len)
+linux-nova-master/arch/sparc/kernel/sys_sparc_64.c:SYSCALL_DEFINE5(64_mremap, unsigned long, addr,	unsigned long, old_len,
+linux-nova-master/arch/sparc/kernel/sys_sparc_64.c:SYSCALL_DEFINE2(getdomainname, char __user *, name, int, len)
+linux-nova-master/arch/sparc/kernel/sys_sparc_64.c:SYSCALL_DEFINE5(utrap_install, utrap_entry_t, type,
+linux-nova-master/arch/sparc/kernel/sys_sparc_64.c:SYSCALL_DEFINE5(rt_sigaction, int, sig, const struct sigaction __user *, act,
+linux-nova-master/arch/sparc/kernel/sys_sparc32.c:COMPAT_SYSCALL_DEFINE3(sparc_sigaction, int, sig,
+linux-nova-master/arch/sparc/kernel/sys_sparc32.c:COMPAT_SYSCALL_DEFINE5(rt_sigaction, int, sig,
+linux-nova-master/arch/sparc/kernel/sys_sparc_32.c:SYSCALL_DEFINE3(sparc_sigaction, int, sig,
+linux-nova-master/arch/sparc/kernel/sys_sparc_32.c:SYSCALL_DEFINE5(rt_sigaction, int, sig,
+linux-nova-master/arch/arm64/kernel/sys.c:SYSCALL_DEFINE1(arm64_personality, unsigned int, personality)
+linux-nova-master/arch/s390/kernel/sys_s390.c:SYSCALL_DEFINE1(mmap2, struct s390_mmap_arg_struct __user *, arg)
+linux-nova-master/arch/s390/kernel/sys_s390.c:SYSCALL_DEFINE5(s390_ipc, uint, call, int, first, unsigned long, second,
+linux-nova-master/arch/s390/kernel/sys_s390.c:SYSCALL_DEFINE1(s390_personality, unsigned int, personality)
+linux-nova-master/arch/s390/kernel/signal.c:SYSCALL_DEFINE0(sigreturn)
+linux-nova-master/arch/s390/kernel/signal.c:SYSCALL_DEFINE0(rt_sigreturn)
+linux-nova-master/arch/s390/kernel/runtime_instr.c:SYSCALL_DEFINE1(s390_runtime_instr, int, command)
+linux-nova-master/arch/s390/kernel/guarded_storage.c:SYSCALL_DEFINE2(s390_guarded_storage, int, command,
+linux-nova-master/arch/s390/kernel/compat_signal.c:COMPAT_SYSCALL_DEFINE0(sigreturn)
+linux-nova-master/arch/s390/kernel/compat_signal.c:COMPAT_SYSCALL_DEFINE0(rt_sigreturn)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_chown16, const char __user *, filename,
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_lchown16, const char __user *,
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_fchown16, unsigned int, fd, u16, user, u16, group)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE2(s390_setregid16, u16, rgid, u16, egid)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE1(s390_setgid16, u16, gid)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE2(s390_setreuid16, u16, ruid, u16, euid)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE1(s390_setuid16, u16, uid)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_setresuid16, u16, ruid, u16, euid, u16, suid)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_getresuid16, u16 __user *, ruidp,
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_setresgid16, u16, rgid, u16, egid, u16, sgid)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_getresgid16, u16 __user *, rgidp,
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE1(s390_setfsuid16, u16, uid)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE1(s390_setfsgid16, u16, gid)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE2(s390_getgroups16, int, gidsetsize, u16 __user *, grouplist)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE2(s390_setgroups16, int, gidsetsize, u16 __user *, grouplist)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE0(s390_getuid16)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE0(s390_geteuid16)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE0(s390_getgid16)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE0(s390_getegid16)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE5(s390_ipc, uint, call, int, first, compat_ulong_t, second,
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_truncate64, const char __user *, path, u32, high, u32, low)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_ftruncate64, unsigned int, fd, u32, high, u32, low)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE5(s390_pread64, unsigned int, fd, char __user *, ubuf,
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE5(s390_pwrite64, unsigned int, fd, const char __user *, ubuf,
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE4(s390_readahead, int, fd, u32, high, u32, low, s32, count)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE2(s390_stat64, const char __user *, filename, struct stat64_emu31 __user *, statbuf)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE2(s390_lstat64, const char __user *, filename, struct stat64_emu31 __user *, statbuf)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE2(s390_fstat64, unsigned int, fd, struct stat64_emu31 __user *, statbuf)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE4(s390_fstatat64, unsigned int, dfd, const char __user *, filename,
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE1(s390_old_mmap, struct mmap_arg_struct_emu31 __user *, arg)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE1(s390_mmap2, struct mmap_arg_struct_emu31 __user *, arg)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_read, unsigned int, fd, char __user *, buf, compat_size_t, count)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE3(s390_write, unsigned int, fd, const char __user *, buf, compat_size_t, count)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE5(s390_fadvise64, int, fd, u32, high, u32, low, compat_size_t, len, int, advise)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE1(s390_fadvise64_64, struct fadvise64_64_args __user *, args)
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE6(s390_sync_file_range, int, fd, u32, offhigh, u32, offlow,
+linux-nova-master/arch/s390/kernel/compat_linux.c:COMPAT_SYSCALL_DEFINE6(s390_fallocate, int, fd, int, mode, u32, offhigh, u32, offlow,
+linux-nova-master/arch/s390/pci/pci_mmio.c:SYSCALL_DEFINE3(s390_pci_mmio_write, unsigned long, mmio_addr,
+linux-nova-master/arch/s390/pci/pci_mmio.c:SYSCALL_DEFINE3(s390_pci_mmio_read, unsigned long, mmio_addr,
+linux-nova-master/arch/arc/kernel/signal.c:SYSCALL_DEFINE0(rt_sigreturn)
+linux-nova-master/arch/arc/kernel/process.c:SYSCALL_DEFINE1(arc_settls, void *, user_tls_data_ptr)
+linux-nova-master/arch/arc/kernel/process.c:SYSCALL_DEFINE0(arc_gettls)
+linux-nova-master/arch/arc/kernel/process.c:SYSCALL_DEFINE3(arc_usr_cmpxchg, int *, uaddr, int, expected, int, new)
+linux-nova-master/arch/arc/mm/cache.c:SYSCALL_DEFINE3(cacheflush, uint32_t, start, uint32_t, sz, uint32_t, flags)
+linux-nova-master/arch/microblaze/kernel/sys_microblaze.c:SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/microblaze/kernel/sys_microblaze.c:SYSCALL_DEFINE6(mmap2, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/tile/kernel/compat.c:COMPAT_SYSCALL_DEFINE4(truncate64, char __user *, filename, u32, dummy,
+linux-nova-master/arch/tile/kernel/compat.c:COMPAT_SYSCALL_DEFINE4(ftruncate64, unsigned int, fd, u32, dummy,
+linux-nova-master/arch/tile/kernel/compat.c:COMPAT_SYSCALL_DEFINE6(pread64, unsigned int, fd, char __user *, ubuf,
+linux-nova-master/arch/tile/kernel/compat.c:COMPAT_SYSCALL_DEFINE6(pwrite64, unsigned int, fd, char __user *, ubuf,
+linux-nova-master/arch/tile/kernel/compat.c:COMPAT_SYSCALL_DEFINE6(sync_file_range2, int, fd, unsigned int, flags,
+linux-nova-master/arch/tile/kernel/compat.c:COMPAT_SYSCALL_DEFINE6(fallocate, int, fd, int, mode,
+linux-nova-master/arch/tile/kernel/compat.c:COMPAT_SYSCALL_DEFINE5(llseek, unsigned int, fd, unsigned int, offset_high,
+linux-nova-master/arch/tile/kernel/signal.c:SYSCALL_DEFINE0(rt_sigreturn)
+linux-nova-master/arch/tile/kernel/sys.c:SYSCALL_DEFINE3(cacheflush, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/tile/kernel/sys.c:SYSCALL_DEFINE6(mmap2, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/tile/kernel/sys.c:SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,
+linux-nova-master/arch/tile/mm/fault.c:SYSCALL_DEFINE1(cmpxchg_badaddr, unsigned long, address)
+linux-nova-master/scripts/kernel-doc:##	if ($prototype =~ m/SYSCALL_DEFINE0\s*\(\s*(a-zA-Z0-9_)*\s*\)/) {
+linux-nova-master/scripts/kernel-doc:	if ($prototype =~ m/SYSCALL_DEFINE0/) {
+linux-nova-master/scripts/kernel-doc:	$prototype =~ s/SYSCALL_DEFINE.*\(/long sys_/; # fix return type & func name
+linux-nova-master/scripts/kernel-doc:	if ($prototype =~ /SYSCALL_DEFINE/) {
+linux-nova-master/scripts/tags.sh:	'/^SYSCALL_DEFINE[0-9](\([[:alnum:]_]*\).*/sys_\1/'
+linux-nova-master/scripts/tags.sh:	'/^COMPAT_SYSCALL_DEFINE[0-9](\([[:alnum:]_]*\).*/compat_sys_\1/'
+linux-nova-master/ipc/compat.c:COMPAT_SYSCALL_DEFINE6(ipc, u32, call, int, first, int, second,
+linux-nova-master/ipc/compat.c:COMPAT_SYSCALL_DEFINE4(semctl, int, semid, int, semnum, int, cmd, int, arg)
+linux-nova-master/ipc/compat.c:COMPAT_SYSCALL_DEFINE4(msgsnd, int, msqid, compat_uptr_t, msgp,
+linux-nova-master/ipc/compat.c:COMPAT_SYSCALL_DEFINE5(msgrcv, int, msqid, compat_uptr_t, msgp,
+linux-nova-master/ipc/compat.c:COMPAT_SYSCALL_DEFINE3(msgctl, int, first, int, second, void __user *, uptr)
+linux-nova-master/ipc/compat.c:COMPAT_SYSCALL_DEFINE3(shmat, int, shmid, compat_uptr_t, shmaddr, int, shmflg)
+linux-nova-master/ipc/compat.c:COMPAT_SYSCALL_DEFINE3(shmctl, int, first, int, second, void __user *, uptr)
+linux-nova-master/ipc/compat.c:COMPAT_SYSCALL_DEFINE4(semtimedop, int, semid, struct sembuf __user *, tsems,
+linux-nova-master/ipc/syscall.c:SYSCALL_DEFINE6(ipc, unsigned int, call, int, first, unsigned long, second,
+linux-nova-master/ipc/shm.c:SYSCALL_DEFINE3(shmget, key_t, key, size_t, size, int, shmflg)
+linux-nova-master/ipc/shm.c:SYSCALL_DEFINE3(shmctl, int, shmid, int, cmd, struct shmid_ds __user *, buf)
+linux-nova-master/ipc/shm.c:SYSCALL_DEFINE3(shmat, int, shmid, char __user *, shmaddr, int, shmflg)
+linux-nova-master/ipc/shm.c:SYSCALL_DEFINE1(shmdt, char __user *, shmaddr)
+linux-nova-master/ipc/mqueue.c:SYSCALL_DEFINE4(mq_open, const char __user *, u_name, int, oflag, umode_t, mode,
+linux-nova-master/ipc/mqueue.c:SYSCALL_DEFINE1(mq_unlink, const char __user *, u_name)
+linux-nova-master/ipc/mqueue.c:SYSCALL_DEFINE5(mq_timedsend, mqd_t, mqdes, const char __user *, u_msg_ptr,
+linux-nova-master/ipc/mqueue.c:SYSCALL_DEFINE5(mq_timedreceive, mqd_t, mqdes, char __user *, u_msg_ptr,
+linux-nova-master/ipc/mqueue.c:SYSCALL_DEFINE2(mq_notify, mqd_t, mqdes,
+linux-nova-master/ipc/mqueue.c:SYSCALL_DEFINE3(mq_getsetattr, mqd_t, mqdes,
+linux-nova-master/ipc/mqueue.c:COMPAT_SYSCALL_DEFINE4(mq_open, const char __user *, u_name,
+linux-nova-master/ipc/mqueue.c:COMPAT_SYSCALL_DEFINE5(mq_timedsend, mqd_t, mqdes,
+linux-nova-master/ipc/mqueue.c:COMPAT_SYSCALL_DEFINE5(mq_timedreceive, mqd_t, mqdes,
+linux-nova-master/ipc/mqueue.c:COMPAT_SYSCALL_DEFINE2(mq_notify, mqd_t, mqdes,
+linux-nova-master/ipc/mqueue.c:COMPAT_SYSCALL_DEFINE3(mq_getsetattr, mqd_t, mqdes,
+linux-nova-master/ipc/msg.c:SYSCALL_DEFINE2(msgget, key_t, key, int, msgflg)
+linux-nova-master/ipc/msg.c:SYSCALL_DEFINE3(msgctl, int, msqid, int, cmd, struct msqid_ds __user *, buf)
+linux-nova-master/ipc/msg.c:SYSCALL_DEFINE4(msgsnd, int, msqid, struct msgbuf __user *, msgp, size_t, msgsz,
+linux-nova-master/ipc/msg.c:SYSCALL_DEFINE5(msgrcv, int, msqid, struct msgbuf __user *, msgp, size_t, msgsz,
+linux-nova-master/ipc/sem.c:SYSCALL_DEFINE3(semget, key_t, key, int, nsems, int, semflg)
+linux-nova-master/ipc/sem.c:SYSCALL_DEFINE4(semctl, int, semid, int, semnum, int, cmd, unsigned long, arg)
+linux-nova-master/ipc/sem.c:SYSCALL_DEFINE4(semtimedop, int, semid, struct sembuf __user *, tsops,
+linux-nova-master/ipc/sem.c:SYSCALL_DEFINE3(semop, int, semid, struct sembuf __user *, tsops,
+linux-nova-master/include/linux/compat.h:#define COMPAT_SYSCALL_DEFINE0(name) \
+linux-nova-master/include/linux/compat.h:#define COMPAT_SYSCALL_DEFINE1(name, ...) \
+linux-nova-master/include/linux/compat.h:        COMPAT_SYSCALL_DEFINEx(1, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/compat.h:#define COMPAT_SYSCALL_DEFINE2(name, ...) \
+linux-nova-master/include/linux/compat.h:	COMPAT_SYSCALL_DEFINEx(2, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/compat.h:#define COMPAT_SYSCALL_DEFINE3(name, ...) \
+linux-nova-master/include/linux/compat.h:	COMPAT_SYSCALL_DEFINEx(3, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/compat.h:#define COMPAT_SYSCALL_DEFINE4(name, ...) \
+linux-nova-master/include/linux/compat.h:	COMPAT_SYSCALL_DEFINEx(4, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/compat.h:#define COMPAT_SYSCALL_DEFINE5(name, ...) \
+linux-nova-master/include/linux/compat.h:	COMPAT_SYSCALL_DEFINEx(5, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/compat.h:#define COMPAT_SYSCALL_DEFINE6(name, ...) \
+linux-nova-master/include/linux/compat.h:	COMPAT_SYSCALL_DEFINEx(6, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/compat.h:#define COMPAT_SYSCALL_DEFINEx(x, name, ...)				\
+linux-nova-master/include/linux/syscalls.h: * for SYSCALL_DEFINE<n>/COMPAT_SYSCALL_DEFINE<n>
+linux-nova-master/include/linux/syscalls.h:#define SYSCALL_DEFINE0(sname)					\
+linux-nova-master/include/linux/syscalls.h:#define SYSCALL_DEFINE1(name, ...) SYSCALL_DEFINEx(1, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/syscalls.h:#define SYSCALL_DEFINE2(name, ...) SYSCALL_DEFINEx(2, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/syscalls.h:#define SYSCALL_DEFINE3(name, ...) SYSCALL_DEFINEx(3, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/syscalls.h:#define SYSCALL_DEFINE4(name, ...) SYSCALL_DEFINEx(4, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/syscalls.h:#define SYSCALL_DEFINE5(name, ...) SYSCALL_DEFINEx(5, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/syscalls.h:#define SYSCALL_DEFINE6(name, ...) SYSCALL_DEFINEx(6, _##name, __VA_ARGS__)
+linux-nova-master/include/linux/syscalls.h:#define SYSCALL_DEFINEx(x, sname, ...)				\
+linux-nova-master/include/linux/syscalls.h:	__SYSCALL_DEFINEx(x, sname, __VA_ARGS__)
+linux-nova-master/include/linux/syscalls.h:#define __SYSCALL_DEFINEx(x, name, ...)					\
+linux-nova-master/net/compat.c:COMPAT_SYSCALL_DEFINE5(setsockopt, int, fd, int, level, int, optname,
+linux-nova-master/net/compat.c:COMPAT_SYSCALL_DEFINE5(getsockopt, int, fd, int, level, int, optname,
+linux-nova-master/net/compat.c:COMPAT_SYSCALL_DEFINE3(sendmsg, int, fd, struct compat_msghdr __user *, msg, unsigned int, flags)
+linux-nova-master/net/compat.c:COMPAT_SYSCALL_DEFINE4(sendmmsg, int, fd, struct compat_mmsghdr __user *, mmsg,
+linux-nova-master/net/compat.c:COMPAT_SYSCALL_DEFINE3(recvmsg, int, fd, struct compat_msghdr __user *, msg, unsigned int, flags)
+linux-nova-master/net/compat.c:COMPAT_SYSCALL_DEFINE4(recv, int, fd, void __user *, buf, compat_size_t, len, unsigned int, flags)
+linux-nova-master/net/compat.c:COMPAT_SYSCALL_DEFINE6(recvfrom, int, fd, void __user *, buf, compat_size_t, len,
+linux-nova-master/net/compat.c:COMPAT_SYSCALL_DEFINE5(recvmmsg, int, fd, struct compat_mmsghdr __user *, mmsg,
+linux-nova-master/net/compat.c:COMPAT_SYSCALL_DEFINE2(socketcall, int, call, u32 __user *, args)
+linux-nova-master/net/socket.c:SYSCALL_DEFINE3(socket, int, family, int, type, int, protocol)
+linux-nova-master/net/socket.c:SYSCALL_DEFINE4(socketpair, int, family, int, type, int, protocol,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE3(bind, int, fd, struct sockaddr __user *, umyaddr, int, addrlen)
+linux-nova-master/net/socket.c:SYSCALL_DEFINE2(listen, int, fd, int, backlog)
+linux-nova-master/net/socket.c:SYSCALL_DEFINE4(accept4, int, fd, struct sockaddr __user *, upeer_sockaddr,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE3(accept, int, fd, struct sockaddr __user *, upeer_sockaddr,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE3(connect, int, fd, struct sockaddr __user *, uservaddr,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE3(getsockname, int, fd, struct sockaddr __user *, usockaddr,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE3(getpeername, int, fd, struct sockaddr __user *, usockaddr,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE6(sendto, int, fd, void __user *, buff, size_t, len,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE4(send, int, fd, void __user *, buff, size_t, len,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE6(recvfrom, int, fd, void __user *, ubuf, size_t, size,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE4(recv, int, fd, void __user *, ubuf, size_t, size,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE5(setsockopt, int, fd, int, level, int, optname,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE5(getsockopt, int, fd, int, level, int, optname,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE2(shutdown, int, fd, int, how)
+linux-nova-master/net/socket.c:SYSCALL_DEFINE3(sendmsg, int, fd, struct user_msghdr __user *, msg, unsigned int, flags)
+linux-nova-master/net/socket.c:SYSCALL_DEFINE4(sendmmsg, int, fd, struct mmsghdr __user *, mmsg,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE3(recvmsg, int, fd, struct user_msghdr __user *, msg,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE5(recvmmsg, int, fd, struct mmsghdr __user *, mmsg,
+linux-nova-master/net/socket.c:SYSCALL_DEFINE2(socketcall, int, call, unsigned long __user *, args)
+linux-nova-master/Documentation/static-keys.txt:  SYSCALL_DEFINE0(getppid)
+linux-nova-master/Documentation/process/adding-syscalls.rst:``SYSCALL_DEFINEn()`` macro rather than explicitly.  The 'n' indicates the
+linux-nova-master/Documentation/process/adding-syscalls.rst: - ``SYSCALL_DEFINEn(xyzzy, ...)`` for the entry point
+linux-nova-master/Documentation/process/adding-syscalls.rst:and is added with the ``COMPAT_SYSCALL_DEFINEn()`` macro, analogously to
+linux-nova-master/Documentation/process/adding-syscalls.rst:SYSCALL_DEFINEn.  This version of the implementation runs as part of a 64-bit
+linux-nova-master/Documentation/process/adding-syscalls.rst: - a ``COMPAT_SYSCALL_DEFINEn(xyzzy, ...)`` for the compat entry point
+linux-nova-master/mm/shmem.c:SYSCALL_DEFINE2(memfd_create,
+linux-nova-master/mm/readahead.c:SYSCALL_DEFINE3(readahead, int, fd, loff_t, offset, size_t, count)
+linux-nova-master/mm/madvise.c:SYSCALL_DEFINE3(madvise, unsigned long, start, size_t, len_in, int, behavior)
+linux-nova-master/mm/mmap.c:SYSCALL_DEFINE1(brk, unsigned long, brk)
+linux-nova-master/mm/mmap.c:SYSCALL_DEFINE6(mmap_pgoff, unsigned long, addr, unsigned long, len,
+linux-nova-master/mm/mmap.c:SYSCALL_DEFINE1(old_mmap, struct mmap_arg_struct __user *, arg)
+linux-nova-master/mm/mmap.c:SYSCALL_DEFINE2(munmap, unsigned long, addr, size_t, len)
+linux-nova-master/mm/mmap.c:SYSCALL_DEFINE5(remap_file_pages, unsigned long, start, unsigned long, size,
+linux-nova-master/mm/fadvise.c:SYSCALL_DEFINE4(fadvise64_64, int, fd, loff_t, offset, loff_t, len, int, advice)
+linux-nova-master/mm/fadvise.c:SYSCALL_DEFINE4(fadvise64, int, fd, loff_t, offset, size_t, len, int, advice)
+linux-nova-master/mm/nommu.c:SYSCALL_DEFINE1(brk, unsigned long, brk)
+linux-nova-master/mm/nommu.c:SYSCALL_DEFINE6(mmap_pgoff, unsigned long, addr, unsigned long, len,
+linux-nova-master/mm/nommu.c:SYSCALL_DEFINE1(old_mmap, struct mmap_arg_struct __user *, arg)
+linux-nova-master/mm/nommu.c:SYSCALL_DEFINE2(munmap, unsigned long, addr, size_t, len)
+linux-nova-master/mm/nommu.c:SYSCALL_DEFINE5(mremap, unsigned long, addr, unsigned long, old_len,
+linux-nova-master/mm/mprotect.c:SYSCALL_DEFINE3(mprotect, unsigned long, start, size_t, len,
+linux-nova-master/mm/mprotect.c:SYSCALL_DEFINE4(pkey_mprotect, unsigned long, start, size_t, len,
+linux-nova-master/mm/mprotect.c:SYSCALL_DEFINE2(pkey_alloc, unsigned long, flags, unsigned long, init_val)
+linux-nova-master/mm/mprotect.c:SYSCALL_DEFINE1(pkey_free, int, pkey)
+linux-nova-master/mm/mremap.c:SYSCALL_DEFINE5(mremap, unsigned long, addr, unsigned long, old_len,
+linux-nova-master/mm/mincore.c:SYSCALL_DEFINE3(mincore, unsigned long, start, size_t, len,
+linux-nova-master/mm/swapfile.c:SYSCALL_DEFINE1(swapoff, const char __user *, specialfile)
+linux-nova-master/mm/swapfile.c:SYSCALL_DEFINE2(swapon, const char __user *, specialfile, int, swap_flags)
+linux-nova-master/mm/mempolicy.c:SYSCALL_DEFINE6(mbind, unsigned long, start, unsigned long, len,
+linux-nova-master/mm/mempolicy.c:SYSCALL_DEFINE3(set_mempolicy, int, mode, const unsigned long __user *, nmask,
+linux-nova-master/mm/mempolicy.c:SYSCALL_DEFINE4(migrate_pages, pid_t, pid, unsigned long, maxnode,
+linux-nova-master/mm/mempolicy.c:SYSCALL_DEFINE5(get_mempolicy, int __user *, policy,
+linux-nova-master/mm/mempolicy.c:COMPAT_SYSCALL_DEFINE5(get_mempolicy, int __user *, policy,
+linux-nova-master/mm/mempolicy.c:COMPAT_SYSCALL_DEFINE3(set_mempolicy, int, mode, compat_ulong_t __user *, nmask,
+linux-nova-master/mm/mempolicy.c:COMPAT_SYSCALL_DEFINE6(mbind, compat_ulong_t, start, compat_ulong_t, len,
+linux-nova-master/mm/mlock.c:SYSCALL_DEFINE2(mlock, unsigned long, start, size_t, len)
+linux-nova-master/mm/mlock.c:SYSCALL_DEFINE3(mlock2, unsigned long, start, size_t, len, int, flags)
+linux-nova-master/mm/mlock.c:SYSCALL_DEFINE2(munlock, unsigned long, start, size_t, len)
+linux-nova-master/mm/mlock.c:SYSCALL_DEFINE1(mlockall, int, flags)
+linux-nova-master/mm/mlock.c:SYSCALL_DEFINE0(munlockall)
+linux-nova-master/mm/process_vm_access.c:SYSCALL_DEFINE6(process_vm_readv, pid_t, pid, const struct iovec __user *, lvec,
+linux-nova-master/mm/process_vm_access.c:SYSCALL_DEFINE6(process_vm_writev, pid_t, pid,
+linux-nova-master/mm/process_vm_access.c:COMPAT_SYSCALL_DEFINE6(process_vm_readv, compat_pid_t, pid,
+linux-nova-master/mm/process_vm_access.c:COMPAT_SYSCALL_DEFINE6(process_vm_writev, compat_pid_t, pid,
+linux-nova-master/mm/migrate.c:SYSCALL_DEFINE6(move_pages, pid_t, pid, unsigned long, nr_pages,
+linux-nova-master/mm/msync.c:SYSCALL_DEFINE3(msync, unsigned long, start, size_t, len, int, flags)
